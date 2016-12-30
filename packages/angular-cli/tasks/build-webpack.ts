@@ -37,6 +37,7 @@ export default <any>Task.extend({
       deployUrl
     ).config;
 
+    config.target = 'electron';
     const webpackCompiler: any = webpack(config);
 
     const statsConfig = getWebpackStatsConfig(runTaskOptions.verbose);
